@@ -1,0 +1,15 @@
+/* About section */
+.about-section{
+    display: flex;
+    height: 300px;
+}
+.img-container{
+    background: red;
+    height: 100%;
+    width: 40%; 
+}
+.description-container{
+    background: blue;
+    height: 100%;
+    width: 60%;
+}

@@ -1,0 +1,47 @@
+/* Responsive design and breakpoints */
+
+/* 
+Good practices: Add at least 2 media queries
+
+Follow the breakpoints of Microsoft Documentation: https://learn.microsoft.com/en-us/windows/apps/design/layout/screen-sizes-and-breakpoints-for-responsive-design
+
+-Small/Phone: < 640px
+    @media(max-width:640px)
+
+-Medium/Tablet: >= 640px < 1008px
+    @media((min-width:641px) and (max-width:1007px))
+*/
+@media(max-width:640px){
+    html{
+        font-size: 10px;
+    }
+    label{
+        cursor: pointer;
+    }
+    header{
+        flex-direction: column;
+        height: max-content;
+        padding: 2%;
+    }
+    .nav-link{
+        flex-direction: column;
+    }
+    .nav-btn{
+        display: inline-block;
+    }
+    /* Toogle function */
+    #nav-check:not(:checked)~.nav-link{
+        height: 0px;
+        overflow: hidden;
+    }
+    #nav-check:checked~.nav-link{
+        height: auto;
+        overflow: auto;
+    }
+}
+
+@media((min-width:641px) and (max-width:1007px)){
+    html{
+        font-size: 12px;
+    }
+}
