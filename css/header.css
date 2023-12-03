@@ -2,6 +2,7 @@ header{
     background-color: var(--surface-color);
     height: 60px;
     position: sticky;
+    z-index: 9999;
     top: 0;
 }
 
