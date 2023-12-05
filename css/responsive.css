@@ -57,7 +57,9 @@ Follow the breakpoints of Microsoft Documentation: https://learn.microsoft.com/e
     .img-container{
         margin-bottom: 4rem;
     }
-
+    #about-img{
+        max-height: 200px;
+    }
     /* Projects section */
     .project-card{
         width:100%;
